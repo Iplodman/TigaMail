@@ -1,3 +1,4 @@
 # Format: "type/other_variant_of_type smtp.address.here"
+# Caution: Don't include blank lines!
 gmail/googlemail smtp.gmail.com
 yahoo smtp.mail.yahoo.com
