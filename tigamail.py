@@ -92,7 +92,8 @@ class Email(cmd.Cmd):
     def load_smtps(self):
         smtps = {}
         with open("smtpaddrs.txt", "r") as f:
-            lines = f.read().split("\n")
+            lines = f.readlines()
+            print(lines)
             for line in lines:
                 if line[0] != "#":
                     split_line = line.split(" ")
