@@ -1,0 +1,3 @@
+# Format: "type/other_variant_of_type smtp.address.here"
+gmail/googlemail smtp.gmail.com
+yahoo smtp.mail.yahoo.com
