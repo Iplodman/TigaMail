@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 __author__ = 'Iplodman'
 
 import cmd
@@ -19,13 +21,13 @@ class Email(cmd.Cmd):
 
     def preloop(self):
         self.con_types = self.load_smtps()
-        print "TigaMail starting...\n"
+        print("TigaMail starting...\n")
 
     def emptyline(self):
-        print "No command entered!"
+        print("No command entered!")
 
     def default(self):
-        print "Looks like you broke something!"
+        print("Looks like you broke something!")
 
     def connect(self, smtp_type):
         self.server = smtplib.SMTP(smtp_type, self.port)
@@ -99,7 +101,7 @@ class Email(cmd.Cmd):
 
     @staticmethod
     def msg_out(msg):
-        print "  ~ " + msg
+        print("  ~ " + msg)
 
     @staticmethod
     def msg_in(prompt):
