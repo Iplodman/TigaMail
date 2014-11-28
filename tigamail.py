@@ -15,7 +15,6 @@ class Email(cmd.Cmd):
     ruler = "~"
 
     port = 587
-    cl_port = 465
     logged_in = False
     acc = None
 
